@@ -5,7 +5,7 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense
 import joblib
 
-# Load data
+# Load train_data 
 file_path = "train_data.csv"
 df = pd.read_csv(file_path)
 df['DATE'] = pd.to_datetime(df['DATE'], format='%d-%b-%y')
